@@ -1,0 +1,10 @@
+public String aOrAn(String word) {
+   String wordWithArticle;
+   if(word.startsWithIgnoreCase ('a') || word.startsWithIgnoreCase ('e') || word.startsWithIgnoreCase ('i') || word.startsWithIgnoreCase ('o') || word.startsWithIgnoreCase ('u')){
+       wordWithArticle = 'an' + ' ' + word;
+   }
+   else{
+       wordWithArticle = 'a' + ' ' + word;
+   }
+   return wordWithArticle;
+}
