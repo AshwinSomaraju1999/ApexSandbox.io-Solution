@@ -1,7 +1,9 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     boolean isAscending = false;
-    if(a!=null && b!=null && c!=null && a<=b<=c){
-        isAscending = true;
+    if(a!=null && b!=null && c!=null){
+        if(a<b && a<c && b<c){
+                isAscending = true;
+        }
     }
     return isAscending;
 }
