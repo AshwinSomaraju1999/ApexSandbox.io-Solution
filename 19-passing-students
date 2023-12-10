@@ -1,5 +1,5 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    Boolean studentpass;
+    Boolean studentpass = false;
     if(passedExam!=null && passedAssignments!=null && passedProject!=null){
         if((passedExam && passedAssignments) || (passedExam && passedProject) || (passedAssignments && passedProject)){
             studentpass = true;
