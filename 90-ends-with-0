@@ -1,6 +1,6 @@
 public Boolean isEndWithZero(Integer num){
      boolean doesitEndwithZero = false;
-     if(num%10 == 0){
+     if(mod(num,10) == 0){
          doesitEndwithZero = true;
      }
      return doesitEndwithZero;
