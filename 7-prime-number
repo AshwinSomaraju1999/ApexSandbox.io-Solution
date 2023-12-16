@@ -9,10 +9,10 @@ public Boolean isPrime(Integer num) {
         }
     }
     if(count>2){
-        result = true;
+        result = false;
     }
     else{
-        result = false;
+        result = true;
     }
     return result;
 }
