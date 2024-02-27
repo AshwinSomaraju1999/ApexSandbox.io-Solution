@@ -1,5 +1,9 @@
 public String nameFromEmail(String email) {
+    String FirstName;
+    String LastName;
     String FullName;
-    FullName = email.split('.');
+    FirstName = email.substringBefore('.');
+    LastName = email.substringBetween('.','@')
+    FullName = FirstName + '' +LastName;
     return FullName;
 }
