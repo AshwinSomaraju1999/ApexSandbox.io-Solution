@@ -2,7 +2,6 @@ public String changeTimeFormat(String strTime) {
     String hrtime;
     String mintime;
     String finalTime;
-    Sring twelveTime;
 
     hrtime = strTime.substringBefore(':');
     mintime = strTime.substringAfter(':');
