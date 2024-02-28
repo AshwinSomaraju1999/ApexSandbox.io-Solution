@@ -2,6 +2,7 @@ public String changeTimeFormat(String strTime) {
     String hrtime;
     String mintime;
     String finalTime;
+    Sring twelveTime;
 
     hrtime = strTime.substringBefore(':');
     mintime = strTime.substringAfter(':');
@@ -9,7 +10,7 @@ public String changeTimeFormat(String strTime) {
         finalTime = strTime + 'AM';
     }
     else{
-        finalTime = String.valueof(int(hrtime)-12) + mintime + 'PM';
+        finalTime = String.valueof(Integer.valueof(hrtime)-12) + mintime + 'PM';
     }
     return finalTime;
 }
