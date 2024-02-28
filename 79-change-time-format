@@ -18,7 +18,7 @@ public String changeTimeFormat(String strTime) {
     else{
         diff = String.valueof(Integer.valueof(hrtime)-12);
         if(diff<'10'){
-            finalTime = '0:'+ diff+mintime + ' PM';
+            finalTime = '0'+ diff+':'mintime + ' PM';
         }
         else{
             finalTime = diff +':' + mintime + ' PM';
