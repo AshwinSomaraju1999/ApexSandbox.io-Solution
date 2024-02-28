@@ -9,7 +9,7 @@ public String changeTimeFormat(String strTime) {
         finalTime = strTime + ' AM';
     }
     else if(Integer.valueof(hrtime) == 0){
-        finalTime = '12'+mintime +' AM';
+        finalTime = '12:'+mintime +' AM';
     }
     else if(Integer.valueof(hrtime) == 12){
         finalTime = strTime +' PM';
