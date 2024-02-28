@@ -6,7 +6,7 @@ public String changeTimeFormat(String strTime) {
     hrtime = strTime.substringBefore(':');
     mintime = strTime.substringAfter(':');
     if(Integer.valueof(hrtime)<12){
-        finalTime = strTime + 'AM';
+        finalTime = strTime + ' AM';
     }
     else{
         finalTime = String.valueof(Integer.valueof(hrtime)-12) + mintime + 'PM';
